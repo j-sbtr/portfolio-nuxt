@@ -41,16 +41,16 @@
 </template>
 
 <script setup>
-useHead({
-  title: 'About | Jasmin Sabater',
-})
+	useHead({
+		title: 'About | Jasmin Sabater',
+	})
 
-useSeoMeta({
-  title: 'About | Jasmin Sabater',
-  ogTitle: 'About | Jasmin Sabater',
-  description: 'Learn more about Jasmin Sabater.',
-  ogDescription: 'Learn more about Jasmin Sabater.',
-  ogImage: '/images/profile.JPG',
-  twitterCard: 'summary_large_image',
-})
+	useSeoMeta({
+		title: 'About | Jasmin Sabater',
+		ogTitle: 'About | Jasmin Sabater',
+		description: 'Learn more about Jasmin Sabater.',
+		ogDescription: 'Learn more about Jasmin Sabater.',
+		ogImage: '/images/profile.JPG',
+		twitterCard: 'summary_large_image',
+	})
 </script>
