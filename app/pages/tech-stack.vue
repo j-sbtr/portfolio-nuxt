@@ -3,7 +3,7 @@
     
     <Navbar />
 
-    <!-- Main Content Container -->
+    <!-- Main Content -->
     <div class="flex-grow">
       <main class="flex flex-col items-center px-4 py-12">
         <h1 class="text-4xl text-white mb-12 mt-5 tracking-wider">Tech Stack</h1>
