@@ -5,7 +5,7 @@
     <Navbar />
 
     <!-- Content -->
-    <main class="flex-grow flex items-center justify-center px-6 py-12 -mt-50 font-['Kanit',sans-serif]">
+    <main class="flex-grow flex items-center justify-center px-6 py-12 md:-mt-50 lg:-mt-50 font-['Kanit',sans-serif]">
       <section class="flex flex-col items-center max-w-7xl mx-auto md:flex-row md:justify-between md:items-center w-full gap-12">
 
         <!-- Picture -->
@@ -36,11 +36,8 @@
               <a href="https://github.com/j-sbtr" target="_blank" class="btn btn-circle btn-lg btn-neutral bg-neutral-900 border-violet-800/50 hover:bg-violet-900/10 text-white">
                 <ion-icon name="logo-github" class="text-2xl"></ion-icon>
               </a>
-
             </div>
-
           </div>
-
         </div>
 
       </section>
@@ -64,7 +61,7 @@
     ogTitle: 'Jasmin Sabater | Portfolio',
     description: 'An aspiring IT professional exploring tech to build impactful web solutions.',
     ogDescription: 'An aspiring IT professional exploring tech to build impactful web solutions.',
-    ogImage: '/image/profile.JPG',
+    ogImage: '/images/profile.JPG',
     twitterCard: 'summary_large_image',
   })
 </script>
