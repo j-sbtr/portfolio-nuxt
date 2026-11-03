@@ -6,7 +6,19 @@
     <!-- Main Content -->
     <div class="flex-grow">
       <main class="flex flex-col items-center px-4 py-12">
-        <h1 class="text-4xl text-white mb-12 mt-5 tracking-wider">Certification</h1>
+        
+         <!-- Page title -->
+        <div class="relative inline-block mb-6 mt-5">
+          <h1 class="text-4xl text-white mb-12 mt-5 tracking-wider">
+            Certification
+          </h1>
+          <span class="absolute top-17 left-1/2 -translate-x-1/2 w-19 h-1 bg-[#9a2fdc] rounded-full"></span>
+        </div>
+        
+        <!-- Icon -->
+        <div class="-mt-8 p-3 rounded-2xl bg-purple-900/15 hover:bg-purple-900/40 duration-500 border border-purple-500/30 shadow-lg shadow-purple-950/50 flex items-center justify-center">
+          <HugeiconsIcon :icon="Certificate01Icon" :size="40" class="text-[#9a2fdc]"/>
+        </div>
       </main>
 
       <!-- Card Container -->
@@ -35,6 +47,8 @@
 </template>
 
 <script setup>
+  import {HugeiconsIcon} from '@hugeicons/vue';
+  import {Certificate01Icon} from '@hugeicons/core-free-icons'
   import {ref} from 'vue'
   const selectedImage = ref(null)
 
