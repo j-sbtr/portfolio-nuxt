@@ -56,7 +56,7 @@
 	const certificates = [
     {
 			title: 'IT Specialist - Databases', 
-			img: '/images/it-specialist-database.jpg',
+			img: '/images/IT-specialist-database.jpg',
 			verifyUrl: 'https://www.certiport.com/portal/pages/credentialverification.aspx'
 		},
 		{
