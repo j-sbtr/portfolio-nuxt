@@ -19,7 +19,7 @@
 
     <!-- Picture enlargement function-->
     <dialog class="modal" :class="{'modal-open': selectedImage}">
-      <div class="modal-box bg-neutral-900/95 border border-purple-500/40 p-6 max-w-3xl relative flex items-center justify-center">
+      <div class="modal-box bg-neutral-900/95 border border-violet-500/40 p-6 max-w-3xl relative flex items-center justify-center">
         <img class="w-full h-auto rounded-lg max-h-[75vh] object-contain mx-auto shadow-2xl"
           v-if="selectedImage" 
           :src="selectedImage" 
