@@ -32,24 +32,24 @@
 <script setup>
   //Items per card in array
   const languages = [
-		{ name: 'Java', img: '/images/stacks/java.png' },
-		{ name: 'HTML', img: '/images/stacks/html.png' },
-		{ name: 'CSS', img: '/images/stacks/css.png' },
-		{ name: 'Tailwind CSS', img: '/images/stacks/tailwind-css.png' },
-		{ name: 'JavaScript', img: '/images/stacks/javascript.png' }
+		{name: 'Java', img: '/images/stacks/java.png'},
+		{name: 'HTML', img: '/images/stacks/html.png'},
+		{name: 'CSS', img: '/images/stacks/css.png'},
+		{name: 'Tailwind CSS', img: '/images/stacks/tailwind-css.png'},
+		{name: 'JavaScript', img: '/images/stacks/javascript.png'}
   ]
 
   const databases = [
-		{ name: 'PostgreSQL', img: '/images/stacks/postgresql.png' },
-		{ name: 'MongoDB', img: '/images/stacks/mongodb.png' }
+		{name: 'PostgreSQL', img: '/images/stacks/postgresql.png'},
+		{name: 'MongoDB', img: '/images/stacks/mongodb.png'}
    ]
 
   const tools = [
-		{ name: 'VS Code', img: '/images/stacks/visual-studio-code.png' },
-		{ name: 'SSMS', img: '/images/stacks/ssms.png' },
-		{ name: 'Android Studio', img: '/images/stacks/android-studio.png' },
-		{ name: 'Git', img: '/images/stacks/git.png' },
-		{ name: 'GitHub', img: '/images/stacks/github.png' }
+		{name: 'VS Code', img: '/images/stacks/visual-studio-code.png'},
+		{name: 'SSMS', img: '/images/stacks/ssms.png'},
+		{name: 'Android Studio', img: '/images/stacks/android-studio.png'},
+		{name: 'Git', img: '/images/stacks/git.png'},
+		{name: 'GitHub', img: '/images/stacks/github.png'}
   ]
 
   useHead({

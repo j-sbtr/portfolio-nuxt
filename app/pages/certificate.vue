@@ -17,17 +17,16 @@
       </section>
     </div>
 
-    <!-- Picture enlargement -->
-    <dialog class="modal" :class="{ 'modal-open': selectedImage }">
+    <!-- Picture enlargement function-->
+    <dialog class="modal" :class="{'modal-open': selectedImage}">
       <div class="modal-box bg-neutral-900/95 border border-purple-500/40 p-6 max-w-3xl relative flex items-center justify-center">
-        <img 
+        <img class="w-full h-auto rounded-lg max-h-[75vh] object-contain mx-auto shadow-2xl"
           v-if="selectedImage" 
           :src="selectedImage" 
-          alt="Certificate Preview" 
-          class="w-full h-auto rounded-lg max-h-[75vh] object-contain mx-auto shadow-2xl"/>
+          alt="Certificate Preview"/>
       </div>
       
-			<form method="dialog" class="modal-backdrop bg-black/80">
+			<form method="dialog" class="modal-backdrop bg-purple/80">
         <button @click="selectedImage = null" type="button">close</button>
       </form>
     </dialog>
@@ -36,11 +35,13 @@
 </template>
 
 <script setup>
+  import {ref} from 'vue'
+  const selectedImage = ref(null)
 
 	//Certs in array
 	const certificates = [
     {
-			title: 'IT Specialist in Database', 
+			title: 'IT Specialist - Databases', 
 			img: '/images/it-specialist-database.jpg',
 			verifyUrl: 'https://www.certiport.com/portal/pages/credentialverification.aspx'
 		},
@@ -55,8 +56,6 @@
 			verifyUrl: 'https://www.certiport.com/portal/pages/credentialverification.aspx'
 		}
 	]
-
-	const selectedImage = ref(null)
 
 	useHead({
 		title: 'Certification | Jasmin Sabater'
