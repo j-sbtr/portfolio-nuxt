@@ -36,10 +36,14 @@
 </template>
 
 <script setup>
-	import {ref} from 'vue'
 
 	//Certs in array
 	const certificates = [
+    {
+			title: 'IT Specialist in Database', 
+			img: '/images/it-specialist-database.jpg',
+			verifyUrl: 'https://www.certiport.com/portal/pages/credentialverification.aspx'
+		},
 		{
 			title: 'MS Word Associate', 
 			img: '/images/ms-word-associate.jpg',
