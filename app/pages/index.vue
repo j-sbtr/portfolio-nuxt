@@ -11,8 +11,8 @@
         <!-- Picture -->
         <div class="flex justify-center md:w-1/2">
           <div class="avatar">
-            <div class="w-48 h-48 md:w-72 md:h-72 rounded-full ring ring-violet-700 ring-offset-base-100 ring-offset-2 shadow-2xl">
-              <img src="/images/profile.JPG" alt="Jasmin Sabater Profile" class="object-cover" />
+            <div class="w-48 h-48 md:w-72 md:h-72 rounded-full ring ring-violet-800 ring-offset-base-100 ring-offset-2 shadow-2xl">
+              <img src="/images/profile.JPG" alt="Jasmin Sabater Profile" class="object-cover"/>
             </div>
           </div>
         </div>
@@ -31,10 +31,22 @@
           <div class="pt-2">
             <p class="text-[20px] font-semibold tracking-wider text-neutral-400 uppercase mb-1">Connect with me</p>
             
-            <!-- Icon -->
+            <!-- Icons -->
+            <!-- GitHub -->
             <div class="inline-flex gap-3 ml-3">
-              <a href="https://github.com/j-sbtr" target="_blank" class="btn btn-circle btn-lg btn-neutral bg-neutral-900 border-violet-800/50 hover:bg-violet-900/10 text-white">
-                <ion-icon name="logo-github" class="text-2xl"></ion-icon>
+              <a href="https://github.com/j-sbtr" target="_blank" 
+                class="group btn btn-circle btn-lg btn-neutral bg-neutral-900 border-violet-800/50 hover:bg-neutral-900/20 text-white">
+                <HugeiconsIcon :icon="GithubIcon" size="23" color="currentColor"
+                  class="text-neutral-300 group-hover:text-violet-800 transition-colors duration-300"/>
+              </a>
+            </div>
+            
+            <!-- LinkedIn -->
+            <div class="inline-flex gap-3 ml-3">
+              <a href="https://www.linkedin.com/in/j-sabater/" target="_blank" 
+                class="group btn btn-circle btn-lg btn-neutral bg-neutral-900 border-violet-800/50 hover:bg-neutral-900/20 text-white">
+                <HugeiconsIcon :icon="Linkedin02Icon" size="23" color="currentColor"
+                  class="text-neutral-300 group-hover:text-violet-800 transition-colors duration-300"/>
               </a>
             </div>
           </div>
@@ -47,14 +59,11 @@
 </template>
 
 <script setup>
+  import {HugeiconsIcon} from '@hugeicons/vue';
+  import {GithubIcon, Linkedin02Icon} from '@hugeicons/core-free-icons'
+
   useHead({
-    title: 'Home | Jasmin Sabater',
-
-    script: [
-      { type: 'module', src: 'https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js' },
-      { nomodule: true, src: 'https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js' }
-    ],
-
+    title: 'Home | Jasmin Sabater'
   })
 
   useSeoMeta({
